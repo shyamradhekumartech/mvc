@@ -1,0 +1,584 @@
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 8032 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 694 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-2 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-2 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 1.329 seconds (JVM running for 310.629)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ConditionEvaluationDeltaLoggingListener -> Condition evaluation unchanged
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] DispatcherServlet -> Completed initialization in 6 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonController -> <PersonController started> at Date and Time: 2021-01-23T00:14:43.317
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T00:14:43.318
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T00:14:43.329
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonDaoImpl -> < PersonDaoImpl Failed (Problem in DB) > Duplicate entry '123112' for key 'PRIMARY'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonServiceImpl -> < PersonServiceImpl compeleted > at Date and Time: 2021-01-23T00:14:43.359
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-10] PersonController -> <PersonController completed> at Date and Time: 2021-01-23T00:14:43.360
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [Thread-9] ThreadPoolTaskExecutor -> Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [Thread-9] LocalContainerEntityManagerFactoryBean -> Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [Thread-9] HikariDataSource -> HikariPool-2 - Shutdown initiated...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [Thread-9] HikariDataSource -> HikariPool-2 - Shutdown completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 8032 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 631 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-3 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-3 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 1.164 seconds (JVM running for 360.168)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ConditionEvaluationDeltaLoggingListener -> Condition evaluation unchanged
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Completed initialization in 6 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController started> at Date and Time: 2021-01-23T00:15:46.517
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T00:15:46.518
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T00:15:46.526
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonDaoImpl -> < PersonDaoImpl Failed (Problem in DB) > Duplicate entry '123112' for key 'PRIMARY'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl compeleted > at Date and Time: 2021-01-23T00:15:46.531
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController completed> at Date and Time: 2021-01-23T00:15:46.532
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 2828 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 29ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 4033 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 9.101 seconds (JVM running for 10.736)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Completed initialization in 12 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:21:13.130
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:21:13.131
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T21:21:13.144
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonDaoImpl -> < PersonDaoImpl Failed (Problem in DB) > Duplicate entry '123112' for key 'PRIMARY'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl compeleted > at Date and Time: 2021-01-23T21:21:13.301
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController completed> at Date and Time: 2021-01-23T21:21:13.301
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:26:02.002
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:26:02.003
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T21:26:02.003
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonDaoImpl -> < PersonDaoImpl Failed (Problem in DB) > Connection is closed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonServiceImpl -> < PersonServiceImpl compeleted > at Date and Time: 2021-01-23T21:26:02.004
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-5] PersonController -> <PersonController completed> at Date and Time: 2021-01-23T21:26:02.005
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 8816 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 2514 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 5.616 seconds (JVM running for 6.703)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] DispatcherServlet -> Completed initialization in 12 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:26:53.992
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:26:53.993
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T21:26:54.007
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] [dispatcherServlet] -> Servlet.service() for servlet [dispatcherServlet] in context with path [/mvc] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.dao.impl.PersonDaoImpl.createPerson(PersonDaoImpl.java:39) ~[classes/:?]
+	at com.example.dao.impl.PersonDaoImpl$$FastClassBySpringCGLIB$$ae11d33c.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at com.example.dao.impl.PersonDaoImpl$$EnhancerBySpringCGLIB$$f3930861.createPerson(<generated>) ~[classes/:?]
+	at com.example.service.impl.PersonServiceImpl.createPerson(PersonServiceImpl.java:27) ~[classes/:?]
+	at com.example.controller.PersonController.createPerson(PersonController.java:38) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_271]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_271]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 6676 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 36ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3532 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> Unable to start LiveReload server
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] AnnotationConfigServletWebServerApplicationContext -> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9090 is already in use
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Shutdown initiated...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Shutdown completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Pausing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Stopping service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Stopping ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Destroying ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ConditionEvaluationReportLoggingListener -> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LoggingFailureAnalysisReporter -> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 1996 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 39ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3579 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 8.451 seconds (JVM running for 10.296)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Completed initialization in 16 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:30:06.210
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:30:06.210
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 10200 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3612 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 8.636 seconds (JVM running for 10.363)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 10164 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3497 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 8.648 seconds (JVM running for 10.412)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 11148 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3693 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 8.488 seconds (JVM running for 10.275)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 4492 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 36ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3719 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 9.18 seconds (JVM running for 10.916)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-3] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-3] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-3] DispatcherServlet -> Completed initialization in 15 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-3] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:45:52.591
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-3] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:45:52.599
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 10776 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 40ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3484 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 8.183 seconds (JVM running for 9.952)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] DispatcherServlet -> Completed initialization in 15 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonController -> <PersonController started> at Date and Time: 2021-01-23T21:47:25.320
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T21:47:25.320
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-2] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T21:47:25.348
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Starting MvcApplication on DESKTOP-PQ1ITEE with PID 9664 (C:\Users\user\Documents\workspace-sts2\mvc\target\classes started by user in C:\Users\user\Documents\workspace-sts2\mvc)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> No active profile set, falling back to default profiles: default
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DevToolsPropertyDefaultsPostProcessor -> For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] RepositoryConfigurationDelegate -> Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat initialized with port(s): 9090 (http)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Initializing ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardService -> Starting service [Tomcat]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] StandardEngine -> Starting Servlet engine: [Apache Tomcat/9.0.41]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] [/mvc] -> Initializing Spring embedded WebApplicationContext
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ServletWebServerApplicationContext -> Root WebApplicationContext: initialization completed in 3489 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Configuration Done >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Starting...
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] HikariDataSource -> HikariPool-1 - Start completed.
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LogHelper -> HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HHH000412: Hibernate ORM core version 5.4.27.Final
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Version -> HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Dialect -> HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JtaPlatformInitiator -> HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] LocalContainerEntityManagerFactoryBean -> Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] JpaBaseConfiguration$JpaWebConfiguration -> spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DBConfig -> < Database Connection Done... >
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ThreadPoolTaskExecutor -> Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] OptionalLiveReloadServer -> LiveReload server is running on port 35729
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] Http11NioProtocol -> Starting ProtocolHandler ["http-nio-9090"]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] TomcatWebServer -> Tomcat started on port(s): 9090 (http) with context path '/mvc'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Context refreshed
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] DocumentationPluginsBootstrapper -> Found 1 custom documentation plugin(s)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] ApiListingReferenceScanner -> Scanning for api listing references
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [restartedMain] MvcApplication -> Started MvcApplication in 7.427 seconds (JVM running for 8.653)
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] [/mvc] -> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] DispatcherServlet -> Initializing Servlet 'dispatcherServlet'
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] DispatcherServlet -> Completed initialization in 26 ms
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonController -> <PersonController started> at Date and Time: 2021-01-23T23:07:22.314
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonServiceImpl -> < PersonServiceImpl started > at Date and Time: 2021-01-23T23:07:22.315
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] PersonDaoImpl -> < PersonDaoImpl started > at Date and Time: 2021-01-23T23:07:22.336
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-1] [dispatcherServlet] -> Servlet.service() for servlet [dispatcherServlet] in context with path [/mvc] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.dao.impl.PersonDaoImpl.createPerson(PersonDaoImpl.java:39) ~[classes/:?]
+	at com.example.dao.impl.PersonDaoImpl$$FastClassBySpringCGLIB$$ae11d33c.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at com.example.dao.impl.PersonDaoImpl$$EnhancerBySpringCGLIB$$baaeae1f.createPerson(<generated>) ~[classes/:?]
+	at com.example.service.impl.PersonServiceImpl.createPerson(PersonServiceImpl.java:27) ~[classes/:?]
+	at com.example.controller.PersonController.createPerson(PersonController.java:38) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_271]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_271]
+[INFO ] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-6] EmailUtil -> < mail sending... >
+[ERROR] %{yyyy-MM-dd HH:mm:ss.SSS} [http-nio-9090-exec-6] PersonController -> Missing final '@domain'
