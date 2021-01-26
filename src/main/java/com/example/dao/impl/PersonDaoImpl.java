@@ -24,11 +24,6 @@ public class PersonDaoImpl implements IPersonDao {
 	@Autowired
 	private DBConfig dbConfig;
 
-	/*
-	 * This method is used for storing person object in database
-	 * @param Person person is an object
-	 * @return String
-	 */
 	@Override
 	public String createPerson(Person person) {
 		logger.info("< PersonDaoImpl started > at " + LocalDateTime.now().toString());
