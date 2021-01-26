@@ -1,14 +1,20 @@
 package com.example.model;
 
-/*@Entity
-@Table(name="person_table")*/
+/**
+ * <p>
+ * 	It is an Person Object is used as persisting object
+ * in database and retrieve the object from database
+ * </p>
+ * <p>
+ * 	It has two fields like id and name
+ * </p>
+ * 
+ * @since 20 JAN 2021
+ * @author user
+ * @version 1.0
+ */
 public class Person {
 	
-	/*
-	 * @Id
-	 * 
-	 * @GeneratedValue(strategy=GenerationType.AUTO)
-	 */
 	private int id;
 	private String name;
 
