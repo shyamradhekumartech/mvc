@@ -26,8 +26,7 @@ public class PersonDaoImpl implements IPersonDao {
 
 	@Override
 	public String createPerson(Person person) {
-		LocalDateTime dateTime = LocalDateTime.now();
-		logger.info("< PersonDaoImpl started > at Date and Time: " + dateTime.toString());
+		logger.info("< PersonDaoImpl started > at " + LocalDateTime.now().toString());
 		String message = "failed";
 		try(Connection conn = dbConfig.getConnection()) {
 			PreparedStatement pstmt = conn.prepareStatement("INSERT INTO EMPLOYEE VALUES(?,?)");
@@ -43,10 +42,9 @@ public class PersonDaoImpl implements IPersonDao {
 					return message = "inserted";
 			}
 			
-			LocalDateTime dateTimeAfterCompeletion = LocalDateTime.now();
-			logger.info("< PersonDaoImpl Completed > at Date and Time: " + dateTimeAfterCompeletion.toString());
+			logger.info("< PersonDaoImpl Completed > at " + LocalDateTime.now().toString());
 		} catch (SQLException e) {
-			logger.error("< PersonDaoImpl Failed (Problem in DB) > " + e.getMessage());
+			logger.error("< PersonDaoImpl Failed (Problem in DB) > with " + e.getMessage() + " at " + LocalDateTime.now().toString());
 		}
 		return message;
 	}

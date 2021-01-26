@@ -33,21 +33,20 @@ public class PersonController {
 			produces="String")
 	@PostMapping("/person")
 	public String createPerson(@RequestBody Person person) {
-		LocalDateTime dateTime = LocalDateTime.now();
-		logger.info("<PersonController started> at Date and Time: " + dateTime.toString());
+		logger.info("<PersonController started> at " + LocalDateTime.now().toString());
 		String message = personService.createPerson(person);
-		LocalDateTime dateTimeAfterCompeletion = LocalDateTime.now();
-		logger.info("<PersonController completed> at Date and Time: " + dateTimeAfterCompeletion.toString());
+		logger.info("<PersonController completed> at " + LocalDateTime.now().toString());
 		return message;
 	}
 	
 	@GetMapping("/mail")
 	public String sendMail() {
+		logger.info("< Mail sending... > at " + LocalDateTime.now().toString());
 		try {
 			EmailUtil.isSend();
-			logger.info("Mail Sent Successfully!");
+			logger.info("Mail Sent Successfully! at " + LocalDateTime.now().toString());
 		} catch (MessagingException e) {
-			logger.error(e.getMessage());
+			logger.error("< Mail failed... > with " + e.getMessage() + " at " + LocalDateTime.now().toString());
 			return "Failed";
 		}
 		return "Send";

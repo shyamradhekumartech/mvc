@@ -1,5 +1,6 @@
 package com.example.util;
 
+import java.time.LocalDateTime;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -25,7 +26,7 @@ public class EmailUtil {
 	private static final Logger logger = LogManager.getLogger(EmailUtil.class);
 	
 	public static void isSend() throws AddressException, MessagingException {
-		logger.info("< mail sending... >");
+		logger.info("< mail sending... > at " + LocalDateTime.now().toString());
 		Session session = Session.getInstance(props(), new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -48,15 +49,17 @@ public class EmailUtil {
 		message.setContent(multipart);
 		
 		Transport.send(message);
-		logger.info("< Mail sent >");
+		logger.info("< Mail sent > at " + LocalDateTime.now().toString());
 	}
 	
 	private static Properties props() {
+		logger.info("< Loading SMTP Properties > at " + LocalDateTime.now().toString());
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.port", "587");
+		logger.info("< SMTP Properties Loaded Successfulyy! > at " + LocalDateTime.now().toString());
 		return props;
 	}
 }
