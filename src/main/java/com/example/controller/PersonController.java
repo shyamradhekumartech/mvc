@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.model.Person;
 import com.example.service.IPersonService;
 import com.example.util.EmailUtil;
+import com.example.validation.PersonUtil;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -34,8 +35,16 @@ public class PersonController {
 	@PostMapping("/person")
 	public String createPerson(@RequestBody Person person) {
 		logger.info("<PersonController started> at " + LocalDateTime.now().toString());
-		String message = personService.createPerson(person);
+		
+		String message = null;
+		if(PersonUtil.validate(person)) {
+			message = personService.createPerson(person);
+		} else {
+			message = "Bad Request";
+		}
+		
 		logger.info("<PersonController completed> at " + LocalDateTime.now().toString());
+		
 		return message;
 	}
 	

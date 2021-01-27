@@ -2,7 +2,6 @@ package com.example.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -32,17 +31,16 @@ public class PersonDaoImpl implements IPersonDao {
 			PreparedStatement pstmt = conn.prepareStatement("INSERT INTO EMPLOYEE VALUES(?,?)");
 			pstmt.setInt(1, person.getId());
 			pstmt.setString(2, person.getName());
-			
-			ResultSet resultSet = pstmt.getResultSet(); 
-			
-			if(person.getId() == resultSet.getInt(1)) 
-				return message = "person is already there"; 
+
+			if(pstmt.execute()) {
+				logger.info("< PersonDaoImpl Completed > at " + LocalDateTime.now().toString());
+				return message = "inserted";
+			}
 			else {
-				if(pstmt.execute()) 
-					return message = "inserted";
+				logger.info("< PersonDaoImpl Failed > at " + LocalDateTime.now().toString());
+				return message = "person is already there"; 
 			}
 			
-			logger.info("< PersonDaoImpl Completed > at " + LocalDateTime.now().toString());
 		} catch (SQLException e) {
 			logger.error("< PersonDaoImpl Failed (Problem in DB) > with " + e.getMessage() + " at " + LocalDateTime.now().toString());
 		}
