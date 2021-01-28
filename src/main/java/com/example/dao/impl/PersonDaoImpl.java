@@ -15,6 +15,12 @@ import com.example.dao.IPersonDao;
 import com.example.dbconfig.DBConfig;
 import com.example.model.Person;
 
+/**
+ * This is Data Access Layer Implementation
+ * we can perform select and non-select operation
+ * @author user
+ * @since 20 JAN 2020
+ */
 @Repository
 public class PersonDaoImpl implements IPersonDao {
 

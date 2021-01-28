@@ -12,6 +12,12 @@ import com.example.dao.IPersonDao;
 import com.example.model.Person;
 import com.example.service.IPersonService;
 
+/**
+ * This is Service Layer where, 
+ * we can do business logic and transaction management
+ * @author user
+ * @since 20 JAN 2020
+ */
 @Service
 public class PersonServiceImpl implements IPersonService {
 

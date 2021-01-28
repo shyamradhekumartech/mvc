@@ -5,7 +5,8 @@ import java.util.List;
 import com.example.model.Person;
 
 /**
- * 
+ * This is Data Access Layer Interface,
+ * where we can perform select and non-select operation
  * @author SANDEEP RAWAT
  * @version 1.0
  * @since 20 JAN 2020

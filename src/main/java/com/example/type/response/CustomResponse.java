@@ -3,7 +3,7 @@ package com.example.type.response;
 /**
  * This is custom response
  * @author user
- *
+ * @since 20 JAN 2020
  */
 public class CustomResponse {
 

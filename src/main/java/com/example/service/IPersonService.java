@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.example.model.Person;
 
+/**
+ * This is Service Layer Interface
+ * where we can do business logic and transaction management
+ * @author user
+ * @since 20 JAN 2020
+ */
 public interface IPersonService {
 
 	public String createPerson(Person person);
