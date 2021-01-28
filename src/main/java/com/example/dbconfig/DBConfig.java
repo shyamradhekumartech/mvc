@@ -1,8 +1,5 @@
 package com.example.dbconfig;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-
 import javax.sql.DataSource;
 
 import org.apache.logging.log4j.LogManager;
@@ -38,16 +35,4 @@ public class DBConfig {
 		return dataSourceBuilder.build();
 	}
 	
-	@Bean
-	public Connection getConnection() {
-		Connection con = null;
-		logger.debug("< Getting Database Connection... >");
-		try {
-				con = this.getDataSource().getConnection();
-				logger.info("< Database Connection Done... >");
-		} catch (SQLException e) {
-			logger.error("< Database Connection Failed >");
-		}
-		return con;
-	}
 }

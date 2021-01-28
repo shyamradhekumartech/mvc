@@ -26,23 +26,20 @@ public class PersonDaoImpl implements IPersonDao {
 	@Override
 	public String createPerson(Person person) {
 		logger.info("< PersonDaoImpl started > at " + LocalDateTime.now().toString());
-		String message = "failed";
-		try(Connection conn = dbConfig.getConnection()) {
+		String message;
+		try(Connection conn = dbConfig.getDataSource().getConnection()) {
 			PreparedStatement pstmt = conn.prepareStatement("INSERT INTO EMPLOYEE VALUES(?,?)");
 			pstmt.setInt(1, person.getId());
 			pstmt.setString(2, person.getName());
-
-			if(pstmt.execute()) {
-				logger.info("< PersonDaoImpl Completed > at " + LocalDateTime.now().toString());
-				return message = "inserted";
-			}
-			else {
-				logger.info("< PersonDaoImpl Failed > at " + LocalDateTime.now().toString());
-				return message = "person is already there"; 
-			}
+			
+			pstmt.execute();
+			message = "Inserted";
+			logger.info("< PersonDaoImpl completed > at " + LocalDateTime.now().toString()
+					+ " with Person Data: " + person.toString());	
 			
 		} catch (SQLException e) {
 			logger.error("< PersonDaoImpl Failed (Problem in DB) > with " + e.getMessage() + " at " + LocalDateTime.now().toString());
+			message = e.getMessage();
 		}
 		return message;
 	}

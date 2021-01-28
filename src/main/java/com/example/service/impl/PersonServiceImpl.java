@@ -22,7 +22,7 @@ public class PersonServiceImpl implements IPersonService {
 	
 	@Override
 	public String createPerson(Person person) {
-		logger.info("< PersonServiceImpl started > at " + LocalDateTime.now().toString());
+		logger.info("< PersonServiceImpl started > at " + LocalDateTime.now().toString() + " with Person Data: " + person);
 		String message = personDao.createPerson(person);
 		if(message != null)
 			logger.info("< PersonServiceImpl compeleted > at " + LocalDateTime.now().toString());
