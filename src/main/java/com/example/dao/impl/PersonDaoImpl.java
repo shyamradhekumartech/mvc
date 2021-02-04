@@ -2,8 +2,10 @@ package com.example.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -62,7 +64,26 @@ public class PersonDaoImpl implements IPersonDao {
 
 	@Override
 	public List<Person> getAllPersons() {
-		return null;
+		logger.info("< PersonDaoImpl started > with getAllPersons() method, at " + LocalDateTime.now().toString());
+
+		List<Person> persons = new ArrayList<>(0);
+		try(Connection conn = dbConfig.getDataSource().getConnection()) {
+			try {
+				PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM EMPLOYEE");
+				pstmt.execute();
+				ResultSet rs = pstmt.getResultSet();
+				while(rs.next()) {
+					persons.add(new Person(rs.getInt(1), rs.getString(2)));
+				}
+			} catch (SQLException e) {
+				logger.error("< PersonDaoImpl > Failed from fetching due to empty");
+			}
+		} catch (SQLException e) {
+			logger.error("<PersonDaoImpl > Failed due to DB Connection");
+		}
+		logger.info("< PersonDaoImpl completed > with getAllPersons() method, at " + LocalDateTime.now().toString() + " data: " + persons);
+
+		return persons;
 	}
 
 }

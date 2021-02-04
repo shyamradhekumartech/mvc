@@ -47,6 +47,11 @@ public class PersonServiceImpl implements IPersonService {
 
 	@Override
 	public List<Person> getAllPersons() {
+		logger.info("< PersonServiceImpl started > with getAllPersons() method, at " + LocalDateTime.now().toString());
+		List<Person> persons = personDao.getAllPersons();
+		logger.info("< PersonServiceImpl completed > with getAllPersons() method, at " + LocalDateTime.now().toString() + " data: " + persons);
+		if(persons != null)
+			return persons;
 		return null;
 	}
 

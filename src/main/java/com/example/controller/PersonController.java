@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import javax.mail.MessagingException;
 
@@ -42,6 +43,12 @@ public class PersonController {
 		CustomResponse response = new CustomResponse();
 		
 		String message = null;
+		/**
+		 * First, validate Person object if it is correct 
+		 * then send to next layer
+		 * otherwise, return back the request with response
+		 * why because It will not take processing time.
+		 */
 		if(PersonUtil.validate(person)) {
 			message = personService.createPerson(person);
 			response.setMessage(message);
@@ -60,6 +67,17 @@ public class PersonController {
 		return new ResponseEntity<CustomResponse>(response, HttpStatus.OK);
 	}
 	
+	
+	@GetMapping("/persons")
+	public ResponseEntity<?> getAllPersons() {
+		logger.info("<PersonController started> at " + LocalDateTime.now().toString());
+		List<Person> persons = personService.getAllPersons();
+		logger.info("<PersonController completed> at " + LocalDateTime.now().toString() + " data: " + persons);
+		CustomResponse response = new CustomResponse("No Data", "SUCCESS", 200);
+		return new ResponseEntity<> (!persons.isEmpty()? persons : response, HttpStatus.OK);
+	}
+	
+
 	@GetMapping("/mail")
 	public String sendMail() {
 		logger.info("< Mail sending... > at " + LocalDateTime.now().toString());
